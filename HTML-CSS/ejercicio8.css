@@ -1,0 +1,32 @@
+a:link {
+    color: blue;
+}
+
+
+a:visited{
+    color:#CCC;
+}
+
+
+/*
+
+.link1:visited {
+    color: green;
+}
+
+.link2:visited {
+    color: green;
+}
+
+.link3:visited {
+    color: green;
+}
+*/
+
+a:hover {
+    color: #FFF;
+}
+
+a:active {
+    color: red;
+}

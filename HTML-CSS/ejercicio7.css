@@ -1,0 +1,33 @@
+body {
+    background-color: #FFF47A;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.titulo{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.subtitulo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.imagen1{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+#playSound {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+  

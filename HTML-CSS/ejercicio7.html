@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+
+    <link rel="stylesheet" href="ejercicio7.css">
+</head>
+
+<body>
+    <h1 class="titulo">Vos trabajas en Mercado Libre?</h1>
+    <p>-No</p>
+    <h1 class="subtitulo">y este paquete?</h1>
+    <div class="imagen1"> <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIR3nYziOLTiVLRDF7bUcXQWbndUaz1vixWVXvvqsRJjvsB7jSd1iS10Ab-gQQXqCEGiQ&usqp=CAU"
+            alt="La baguette">
+    </div>
+
+        <!-- Agregamos un elemento de audio oculto -->
+        <audio id="myAudio" style="display: none;">
+            <source src="alalala.mp3" type="audio/mpeg">
+            Tu navegador no admite el elemento de audio.
+        </audio>
+    
+        <!-- Agregamos un enlace con el texto y le asociamos un evento de clic -->
+        <p><a href="#" id="playSound">-alalalala</a></p>
+    
+        <script>
+            // Obtenemos una referencia al elemento de audio
+            const audio = document.getElementById('myAudio');
+    
+            // Obtenemos una referencia al enlace
+            const playSoundLink = document.getElementById('playSound');
+    
+            // Agregamos un evento de clic al enlace para reproducir el sonido
+            playSoundLink.addEventListener('click', function (event) {
+                event.preventDefault(); // Evitamos que el enlace redireccione
+                audio.play(); // Reproducimos el sonido
+            });
+        </script>
+</body>
+
+</html>

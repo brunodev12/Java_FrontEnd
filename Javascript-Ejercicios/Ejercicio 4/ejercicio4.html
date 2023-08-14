@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <div>
+        <label for="caracter-input">Ingrese 'S' o 'N':</label><br/>
+        <input id="caracter-input" type="text" maxlength="1">
+        <p id="mensaje-container"></p>
+    </div>
+    <script>
+        const caracterInput = document.getElementById("caracter-input");
+        const mensajeContainer = document.getElementById("mensaje-container");
+
+        caracterInput.addEventListener("input", function() {
+            checkCaracter(caracterInput.value.toUpperCase());
+        });
+
+        function checkCaracter(caracter) {
+            mensajeContainer.textContent = '';
+
+            if (caracter === 'S' || caracter === 'N') {
+                mensajeContainer.textContent = 'CORRECTO';
+            } else {
+                mensajeContainer.textContent = 'INCORRECTO';
+            }
+        }
+    </script>
+</body>
+</html>

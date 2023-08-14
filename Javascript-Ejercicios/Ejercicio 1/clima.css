@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/vector-premium/paisaje-dia-soleado_10250-1336.jpg?w=2000') center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #e2e8ec;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.center-top {
+    margin-top: 20px;
+}
+
+.input-container {
+    background-color: rgba(181, 172, 172, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#liveAlertPlaceholder {
+    margin-top: 20px;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    padding: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    color: #000;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+#weather-widget-container {
+    margin-top: 30px;
+}
+
+.close-button {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    padding: 10;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    color: #000;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.close-button:hover {
+    color: #f44336;
+}
